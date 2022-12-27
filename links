@@ -1,2 +1,11 @@
 https://bkenkel.com/pdaps/panel.html
 https://www.yabin-da.com/notes_in_r/how-to-do-clustering-for-panel-data-model-in-r/
+
+#python code
+import pandas as pd
+from pandas_datareader import wb   # world bank data 
+electricity= '0061842'
+agri='AG.LND.IRIG.AG.ZS'
+countries=['USA','NPL','CAN','IND']
+df1=wb.download(indicator=agri, country=countries, start=2010, end=2010)
+df
